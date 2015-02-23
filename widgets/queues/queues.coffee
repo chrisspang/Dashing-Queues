@@ -41,7 +41,7 @@ class Dashing.Queues extends Dashing.Widget
         .attr("width", width)
         .attr("height", height)
 
-    svg = d3.select("##{id}")
+    svg = d3.select(@node).select("##{id}")
 
     rects = svg.selectAll("rect");
 
